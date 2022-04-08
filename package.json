@@ -1,0 +1,19 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm:app\" \"npm:api\"",
+    "app": "vite",
+    "api": "nodemon ./api.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.1.0",
+    "nodemon": "^2.0.15",
+    "vite": "^2.9.1"
+  }
+}
